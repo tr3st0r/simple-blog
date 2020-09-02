@@ -132,6 +132,17 @@ main article span.entry-date {
   color: var(--secondary-text);
 }
 
+/* Images in the article */
+main article img {
+  max-width: 100%;
+  height: auto;
+}
+
+main article figcaption {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
 main article ul:last-child::before {
   content: "Tags:";
   margin-right: 1ch;
