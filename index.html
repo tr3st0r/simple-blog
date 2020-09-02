@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>blog-name</title>
+    <meta charset="utf-8">
+    <meta name="author" content="your-name">
+    <meta name="description" content="blog-description">
+    <link href="style/main.css" rel="stylesheet">
+    <!-- if a user with a small screen is visiting the site, the style gets adjusted --!>
+    <link media="screen and (max-width: 500px)" href="style/small.css" rel="stylesheet">
+    <!-- the script loads deffered. This ensures that the elements it accesses are loaded --!>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>blog-name</h1>
+      <div>
+        <nav>
+        <!-- the user can input search terms to filter the blog --!>
+          <input type="search" id="search" name="search" label="search" placeholder="search blog...">
+        </nav>
+        <!-- the user can change the theme of the blog --!>
+        <button id="change-theme" title="Change theme" aria-label="Change theme">
+          🖌️
+        </button>
+        <ul class="hidden" id="themes-list">
+          <li>Dark</li>
+          <li>Light</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+    <!-- the main content is divided in years --!>
+      <section id="year">
+        <h2>year</h2>
+        <!-- and months, the user can navigate to either of them --!>
+        <section id="year-month">
+        <!-- every article consists of title, date, content and tags --!>
+          <article>
+          <!-- the article title is wrapped in a "head" for easier manipulation (flexbox) --!>
+            <div class="entry-head">
+              <h3>blog-entry-title</h3>
+              <span class="entry-date">entry-date</span>
+            </div>
+            <!-- here is the content it can be anything you like (not just a paragraph) --!>
+            <p>
+              Your first blog entry! Write about anything you like. Also consider adding pictures.
+            </p>
+            <!-- here is a list of tags --!>
+            <ul>
+              <li>Tag</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+    </main>
+    <aside>
+    <!-- here we link to the different sections of the blog, it is a list of years --!>
+      <ul>
+        <li><a href="#year">year</a>
+        <!-- with a list of months --!>
+          <ul>
+            <li><a href="#year-month">month</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <!-- some miscellaneous content --!>
+    <footer>
+      <p>
+        Contact me at <a href="mailto:mail@mail.org">mail@mail.org</a>.
+      </p>
+    </footer>
+  </body>
+</html>
